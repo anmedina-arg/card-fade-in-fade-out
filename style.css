@@ -1,0 +1,63 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin: 2rem;
+  justify-content: center;
+  display: flex;
+}
+
+p {
+  margin: 1rem 2rem;
+}
+
+.section__animacion__principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.html__first__animation,
+.css__first__animation {
+  width: 100%;
+}
+
+.elementToFadeInAndOut {
+  border-radius: 5px;
+  padding: 1rem;
+  width: 400px;
+  height: fit-content;
+  background: red;
+  animation: fadeinout 4s linear infinite;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
